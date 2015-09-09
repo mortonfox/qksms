@@ -48,7 +48,7 @@ public class QKTextView extends TextView implements LiveView {
         }
     }
 
-    private void init(Context context, AttributeSet attrs) {
+    protected void init(Context context, AttributeSet attrs) {
         mContext = context;
 
         if (attrs != null) {

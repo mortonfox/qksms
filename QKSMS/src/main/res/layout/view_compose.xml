@@ -76,7 +76,8 @@
             android:layout_alignBottom="@+id/compose_reply_text"
             android:layout_alignParentRight="true"
             android:layout_marginBottom="-16dp"
-            android:animateLayoutChanges="true">
+            android:animateLayoutChanges="true"
+            android:layout_marginTop="30dp">
 
             <ImageView
                 android:layout_width="56dp"
@@ -123,7 +124,7 @@
 
         </FrameLayout>
 
-        <com.moez.QKSMS.ui.view.QKTextView
+        <com.moez.QKSMS.ui.view.QKCounterView
             android:id="@+id/compose_letter_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

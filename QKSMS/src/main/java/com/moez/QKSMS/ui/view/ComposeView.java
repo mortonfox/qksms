@@ -218,11 +218,18 @@ public class ComposeView extends LinearLayout implements View.OnClickListener, L
 
                 // If the reply is within 10 characters of the SMS limit (160), it will start counting down
                 // If the reply exceeds the SMS limit, it will count down until an extra message will have to be sent, and shows how many messages will currently be sent
-                if (length < 150) {
-                    mLetterCount.setText("");
-                } else if (150 <= length && length <= 160) {
+//                if (length < 150) {
+//                    mLetterCount.setText("");
+//                } else if (150 <= length && length <= 160) {
+//                    mLetterCount.setText("" + (160 - length));
+//                } else if (160 < length) {
+//                    mLetterCount.setText((160 - length % 160) + "/" + (length / 160 + 1));
+//                }
+
+                // Always show character counter.
+                if (length <= 160) {
                     mLetterCount.setText("" + (160 - length));
-                } else if (160 < length) {
+                } else {
                     mLetterCount.setText((160 - length % 160) + "/" + (length / 160 + 1));
                 }
             }
